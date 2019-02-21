@@ -1,0 +1,111 @@
+.Tabs {
+  margin-top: 25px;
+
+  &-list {
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+
+    &::after {
+      background-color: $border;
+      bottom: 1px;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    &::before {
+      background-color: $white;
+      bottom: 0;
+      content: '';
+      height: 1px;
+      left: 0;
+      position: absolute;
+      width: 100%;
+      z-index: 1;
+    }
+
+    button {
+      @extend %button;
+      padding: 10px 15px;
+      overflow: visible;
+      position: relative;
+
+      &[aria-selected="true"] {
+        background-color: $grey;
+        padding-top: 20px;
+        z-index: 2;
+
+        &#news {
+          border-width: 1px 1px 0 0;
+          border-style: solid;
+          border-color: $white;
+
+          &::before {
+            background-color: $border;
+            content: '';
+            height: 1px;
+            left: 0;
+            position: absolute;
+            top: -2px;
+            width: calc(100% + 1px);
+            z-index: 1;
+          }
+
+          &::after {
+            background-color: $border;
+            content: '';
+            height: calc(100% + 1px);
+            right: -2px;
+            position: absolute;
+            top: -2px;
+            width: 1px;
+            z-index: 1;
+          }
+        }
+
+        &#archive {
+          border: 1px solid $border;
+          border-width: 1px 1px 0 1px;
+        }
+      }
+
+      &[aria-selected="false"] {
+        background-color: $greenTable;
+        border: 1px solid $border;
+        color: $blue;
+        z-index: 0;
+
+        &#news {
+          border-width: 1px 0 0 1px;
+        }
+      }
+
+
+    }
+  }
+
+  &-panel {
+    background-color: $grey;
+    padding: 15px;
+
+    &-article {
+      a {
+        color: $blue;
+        font-size: $fs-normal;
+        font-weight: $fw-bold;
+        text-decoration: none;
+      }
+
+      p {
+        font-size: $fs-small;
+        line-height: 21px;
+        margin-top: 4px;
+      }
+    }
+  }
+}

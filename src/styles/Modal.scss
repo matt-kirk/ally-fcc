@@ -1,0 +1,84 @@
+.Modal {
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+
+  .is-showing & {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &-content {
+    background: $white;
+    box-shadow: 0 0 10px #000;
+    max-width: 445px;
+    padding: 30px;
+    position: relative;
+    width: 75%;
+    
+    @media #{$mq-medium-up} {
+      width: 85%;
+    }
+
+    a {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+    }
+
+    h2 {
+      font-size: $fs-xlarge;
+      font-weight: $fw-light;
+      margin: 0 0 40px;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+
+      button {
+        @extend %button;
+        background-color: $purple;
+        color: $white;
+        margin-left: auto;
+        padding: 10px;
+        width: 140px;
+      }
+
+      .input {
+        margin: 0 0 20px;
+  
+        @media #{$mq-medium-up} {
+          align-items: center;
+          display: flex;
+          justify-content: space-around;
+        }
+  
+        input {
+          background: none;
+          border: 1px solid $link;
+          flex-basis: 70%;
+          height: 30px;
+          width: 100%;
+  
+          @media #{$mq-medium-up} {
+            flex-basis: 300px;
+          }
+        }
+  
+        label {
+          display: block;
+          font-size: $fs-small;
+          font-weight: $fw-bold;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}

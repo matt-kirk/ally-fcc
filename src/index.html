@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+      <meta charset="utf-8">
+      <title>Ally FCC</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <a href="#main" class="skip">Skip to main content</a>
+    <header role="banner" class="Header">
+      <div class="container-early">
+          <div class="Header-branding"><img src="img/urbank.png"></div>
+          <nav role="navigation">
+            <a href="#">home</a>
+            <a href="#">employee</a>
+            <a href="#" class="is-active">company</a>
+            <a href="#">services</a>
+            <a href="#">contact</a>
+          </nav>
+      </div>
+    </header>
+    <main role="main" id="main">
+      <div class="container--align-top">
+        <article role="article" >
+          <section>
+            <h1>Best Bank Ever!</h1>
+
+            <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
+            </p>
+
+            <div class="Awesome">
+                <p><strong>Reasons We're Awesome</strong></p>
+
+                <ul>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Aliquam tincidunt mauris eu risus.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Lorem ipsum dolor sit amet.</li>
+                  <li>Vestibulum auctor dapibus neque.</li>
+                </ul>
+            </div>
+          </section>
+            
+          <section class="Amazing">
+            <div class="Amazing-content">
+              <h2>Amazing Mobile Info</h2>
+
+              <p>
+                Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. 
+              </p>
+            </div>
+            
+            <div class="Amazing-img">
+              <img src="img/iphone.png" alt="Line art drawing of an iphone" />
+            </div>
+
+          </section>
+  
+          <section class="Rates">
+            <h2><span>Rates</span>Check them out.</h2>
+            
+            <div class="Rates-table">
+              <div class="Row Row-info">
+                <div class="name">&nbsp;</div>
+                <div class="yield">
+                  Anual Percentage Yield
+                </div>
+                <div class="earnings">
+                  Est. Earnings for 1 Year*
+                </div>
+              </div>
+              <div class="Row-dynamic"></div>
+              <div class="Row Row-info">
+                  <div class="name">&nbsp;</div>
+                  <div class="yield">&nbsp;</div>
+                  <div class="earnings">
+                    *Based on $50,000 deposit.
+                  </div>
+                </div>
+            </div>
+          </section>
+        </article>
+        <aside role="complementary">
+          <button class="Login" role="button">Login</button>
+          <div class="Tabs">
+              <div class="Tabs-list" role="tablist" aria-label="News">
+                <button role="tab" aria-selected="true" aria-controls="news-tab" id="news" class="is-visible">News</button>
+                <button role="tab" aria-selected="false" aria-controls="archive-tab" id="archive">Archive</button>
+              </div>
+              <div class="Tabs-panel" tabindex="0" role="tabpanel" id="news-tab" aria-labelledby="news">
+                <div class="Tabs-panel-article">
+                  <a href="#">Lorem ipsum dolor</a>
+                  <p>
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  </p>
+                </div>
+                <div class="Tabs-panel-article">
+                  <a href="#">Lorem ipsum dolor</a>
+                  <p>
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  </p>
+                </div>
+                <div class="Tabs-panel-article">
+                  <a href="#">Lorem ipsum dolor</a>
+                  <p>
+                      Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                  </p>
+                </div>
+              </div>
+              <div class="Tabs-panel" tabindex="0" role="tabpanel" id="archive-tab" aria-labelledby="archive" hidden>
+                  <div class="Tabs-panel-article">
+                    <a href="#">Lorem ipsum dolor</a>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    </p>
+                  </div>
+                  <div class="Tabs-panel-article">
+                    <a href="#">Lorem ipsum dolor</a>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    </p>
+                  </div>
+                  <div class="Tabs-panel-article">
+                    <a href="#">Lorem ipsum dolor</a>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
+                    </p>
+                  </div>
+                </div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer role="contentinfo" class="container-early">
+      <div>
+        &copy; 2014 URBank
+      </div>
+
+      <nav role="navigation">
+        <a href="#">home</a>
+        <a href="#">employee</a>
+        <a href="#" class="is-active">company</a>
+        <a href="#">services</a>
+        <a href="#">contact</a>
+      </nav>
+    </footer>
+    <div class="Modal">
+      <div class="Modal-content">
+        <h2>Sign In To Your Account</h2>
+        <form>
+          <div class="input">
+            <label for="username">Username</label>
+            <input type="text" id="username">
+          </div>
+          <div class="input">
+            <label for="password">Password</label>
+            <input type="text" id="password">
+          </div>
+        
+          <button>Login</button>
+        </form>
+        <a href="#" class="Modal-close"><img src="img/times.png" /></a>
+      </div>
+    </div>
+  </body>
+</html>

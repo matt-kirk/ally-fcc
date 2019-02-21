@@ -1,0 +1,42 @@
+.Amazing {
+  background-color: $green;
+  display: flex;
+  margin-top: 35px;
+  padding: 15px;
+  position: relative;
+
+  @media #{$mq-small-up} {
+    padding-right: 140px;
+  }
+
+  h2 {
+    color: $purple;
+    font-size: 16px;
+    margin-top: 0;
+  }
+
+  p {
+    line-height: 21px;
+    margin-bottom: 0;
+
+    strong {
+      color: $purple;
+      font-size: 16px;
+    }
+  }
+
+  &-img {
+    align-self: flex-end;
+    flex-shrink: 0;
+    margin-left: 13px;
+    max-width: 30%;
+
+    @media #{$mq-small-up} {
+      bottom: 13px;
+      float: none;
+      position: absolute;
+      right: 30px;
+      width: auto;
+    }
+  }
+}

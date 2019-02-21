@@ -1,0 +1,16 @@
+footer {
+  color: $blue;
+  padding: 20px 0;
+
+  nav {
+    margin-top: 20px;
+
+    @media #{$mq-large-up} {
+      margin: 0;
+    }
+    
+    a {
+      color: $blue;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+.Header{
+  background: $blue;
+
+  nav a {
+    color: $white;
+    height: 45px;
+
+    &.is-active {
+      background-color: $blueActive;
+    }
+  }
+}

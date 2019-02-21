@@ -1,0 +1,65 @@
+.Rates {
+  h2 {
+    font-weight: 400;
+    margin: 50px 0 15px;
+
+    span {
+      display: inline-block;
+      font-weight: $fw-light;
+      margin-right: 31px;
+      position: relative;
+
+      &::after {
+        background-color: #505050;
+        content: '';
+        height: 45px;
+        position: absolute;
+        right: -15px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 1px;
+      }
+    }
+  }
+
+  &-table {
+    .Row {
+      align-items: center;
+      background-color: $greenTable;
+      display: flex;
+      font-size: $fs-normal;
+      justify-content: space-between;
+      padding: 10px 15px;
+
+      &:nth-child(even) {
+        background-color: $greyTable;
+      }
+
+      &:first-child:not(.Row-info) {
+        font-size: $fs-large;
+        font-weight: $fw-bold;
+      }
+
+      &-info {
+        background: none;
+        font-size: $fs-tiny;
+        font-weight: $fw-light;
+        padding-right: 0;
+
+        .yield {
+          padding-right: 15px;
+        }
+      }
+
+      .name {
+        flex-basis: 40%;
+      }
+
+      .yield,
+      .earnings {
+        flex-basis: 25%;
+        text-align: right;
+      }
+    }
+  }
+}
