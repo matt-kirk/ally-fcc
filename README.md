@@ -1,7 +1,4 @@
 # ally-fcc
 Ally FCC URBank pages
 
-## Commands
-npm/yarn install
-
-npm/yarn start
+Site is available at http://ally.mattkirk.us
